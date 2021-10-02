@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def returnHome(request):
-    return HttpResponse('Home Page')
+    return render(request, 'home.html')
 
 
 def returnBookingPage(request):

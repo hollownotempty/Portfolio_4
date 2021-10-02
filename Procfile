@@ -1,1 +1,1 @@
-web: gunicorn portfolio-4-tomholohanaudio.wsgi
+web: gunicorn tomholohanaudio.wsgi

@@ -1,3 +1,16 @@
+/* --------------------------- Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400&display=swap');
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* --------------------------- Colors */
 
 .nav-bg-color {
@@ -7,3 +20,34 @@
 .footer-bg-color {
     background-color: #222222;
 }
+
+.book-call-bg-color {
+    background-color: #222222;
+}
+
+/* --------------------------- Hero section */
+
+.hero-text-row {
+    margin: 200px 0;
+}
+
+
+/* --------------------------- Book call section */
+
+.book-call-btn {
+    margin: 20px 0px;
+    background-color: #fafafa;
+    color: black;
+}
+
+.book-call-btn:hover {
+    opacity: 0.7;
+    background-color: #fafafa;
+}
+
+/* --------------------------- Utility */
+
+.remove-bottom-margin {
+    margin-bottom: 0;
+}
+

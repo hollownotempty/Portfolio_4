@@ -11,10 +11,22 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* --------------------------- General */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* --------------------------- Colors */
 
 .nav-bg-color {
     background-color: #222222;
+}
+
+.hero-section-bg-color {
+    background-color: #fafafa;
 }
 
 .footer-bg-color {
@@ -28,7 +40,15 @@ p {
 /* --------------------------- Hero section */
 
 .hero-text-row {
-    margin: 200px 0;
+    padding-top: 175px;
+}
+
+#hero-section {
+    height: calc(100vh - 56px);
+}
+
+.hero-sub-text-row {
+    padding-top: 206px;
 }
 
 
@@ -38,6 +58,8 @@ p {
     margin: 20px 0px;
     background-color: #fafafa;
     color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .book-call-btn:hover {

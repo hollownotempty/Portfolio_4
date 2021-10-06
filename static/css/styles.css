@@ -56,6 +56,16 @@ a {
     padding-top: 206px;
 }
 
+/* --------------------------- Testimonial section */
+
+.testimonial-row .testimonial-image {
+    padding: 0;
+}
+
+.testimonials-inner div h2 {
+    margin-top: 0;
+    padding-top: 2.3733333333rem;
+}
 
 /* --------------------------- Book call section */
 

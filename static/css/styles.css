@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -37,6 +38,10 @@ a {
     background-color: #222222;
 }
 
+.artist-testimonials-bg-color {
+    background-color: #fafafa;
+}
+
 /* --------------------------- Hero section */
 
 .hero-text-row {
@@ -58,8 +63,8 @@ a {
     margin: 20px 0px;
     background-color: #fafafa;
     color: black;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .book-call-btn:hover {
@@ -71,5 +76,9 @@ a {
 
 .remove-bottom-margin {
     margin-bottom: 0;
+}
+
+.remove-margin {
+    margin: 0;
 }
 

@@ -1,0 +1,181 @@
+/* --------------------------- Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400&display=swap');
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+/* --------------------------- General */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-footer {
+    color: #bfbfbf;
+}
+
+
+/* --------------------------- Colors */
+
+.nav-bg-color {
+    background-color: #212121;
+}
+
+.hero-section-bg-color {
+    background-color: #fafafa;
+}
+
+.footer-bg-color {
+    background-color: #000000;
+}
+
+.book-call-bg-color {
+    background-color: #212121;
+}
+
+.artist-testimonials-bg-color {
+    background-color: #fafafa;
+}
+
+.anim_gradient {
+    background: linear-gradient(271deg, #909090, #bfbfbf);
+    background-size: 400% 400%;
+
+    -webkit-animation: GradientBG 24s ease infinite;
+    animation: AnimationName 24s ease infinite;
+}
+
+@-webkit-keyframes GradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+;
+
+/* ------------------------------------------------------- HOME PAGE */
+/* --------------------------- Hero section */
+
+#hero-section {
+    position: relative;
+}
+
+.hero-section-inner {
+    height: 100%;
+    position: relative;
+}
+
+.hero-text-row {
+    margin-left: 0;
+}
+
+#hero-section {
+    height: calc(100vh - 56px);
+}
+
+.hero-section-bottoms {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 10px;
+}
+
+.hero-section-bottoms div p {
+    font-size: large;
+}
+
+/* --------------------------- Testimonial section */
+
+.testimonial-row .testimonial-image {
+    padding: 0;
+}
+
+.testimonials-inner div h2 {
+    margin-top: 0;
+    padding-top: 2.3733333333rem;
+}
+
+.testimonial-image {
+    width: 100%;
+}
+
+#artist-testimonials-larger {
+    padding-bottom: 20px;
+}
+
+#artist-testimonials-mobile {
+    padding-bottom: 30px;
+}
+
+/* --------------------------- Book call section */
+
+.book-call-btn {
+    margin: 20px 0px;
+    background-color: #fafafa;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.book-call-btn:hover {
+    opacity: 0.7;
+    background-color: #fafafa;
+}
+
+#services p {
+    color: #fafafa;
+    font-size: large;
+}
+
+/* ------------------------------------------------------- BOOKING PAGE */
+
+#booking-page-headline > div > h2 {
+    margin-top: 0;
+    padding-top: 5%;
+}
+
+
+.form-submit-btn {
+    background-color: #fafafa;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 7%;
+}
+
+.form-submit-btn:hover {
+    opacity: 0.7;
+    background-color: #fafafa;
+}
+
+/* --------------------------- Utility */
+
+.remove-bottom-margin {
+    margin-bottom: 0;
+}
+
+.remove-margin {
+    margin: 0;
+}
+

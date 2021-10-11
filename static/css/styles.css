@@ -25,10 +25,15 @@ a {
     min-height: 100vh;
 }
 
+.page-footer {
+    color: #bfbfbf;
+}
+
+
 /* --------------------------- Colors */
 
 .nav-bg-color {
-    background-color: #222222;
+    background-color: #212121;
 }
 
 .hero-section-bg-color {
@@ -36,16 +41,37 @@ a {
 }
 
 .footer-bg-color {
-    background-color: #222222;
+    background-color: #000000;
 }
 
 .book-call-bg-color {
-    background-color: #222222;
+    background-color: #212121;
 }
 
 .artist-testimonials-bg-color {
     background-color: #fafafa;
 }
+
+.anim_gradient {
+    background: linear-gradient(271deg, #909090, #bfbfbf);
+    background-size: 400% 400%;
+
+    -webkit-animation: GradientBG 24s ease infinite;
+    animation: AnimationName 24s ease infinite;
+}
+
+@-webkit-keyframes GradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientBG {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+;
 
 /* ------------------------------------------------------- HOME PAGE */
 /* --------------------------- Hero section */
@@ -96,6 +122,10 @@ a {
 
 #artist-testimonials-larger {
     padding-bottom: 20px;
+}
+
+#artist-testimonials-mobile {
+    padding-bottom: 30px;
 }
 
 /* --------------------------- Book call section */

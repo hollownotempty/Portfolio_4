@@ -23,3 +23,6 @@ def returnBookingPage(request):
 
     form = BookingForm()
     return render(request, 'booking.html', {'form': form})
+
+def returnAboutPage(request):
+    return render(request, 'about.html')

@@ -20,6 +20,11 @@ a {
     color: black;
 }
 
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 /* --------------------------- Colors */
 
 .nav-bg-color {
@@ -119,12 +124,22 @@ a {
 
 /* ------------------------------------------------------- BOOKING PAGE */
 
+/* #booking-content-container {
+    height: calc(100vh - 285px);
+} */
+
+#booking-page-headline > div > h2 {
+    margin-top: 0;
+    padding-top: 5%;
+}
+
 
 .form-submit-btn {
     background-color: #fafafa;
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    margin-bottom: 7%;
 }
 
 .form-submit-btn:hover {

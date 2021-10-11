@@ -11,53 +11,61 @@
     <title>Tom Holohan Audio</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-bg-color">
-            <div class="nav-wrapper container">
-              <a href="{% url 'home' %}" class="brand-logo">Th Audio</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="#">About</a></li>
-                <li><a href="{% url 'booking' %}">Book</a></li>
-                <li><a href="https://soundcloud.com/hollownotempty">Listen</a></li>
-              </ul>
-            </div>
-          </nav>
-        
-          <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Book</a></li>
-            <li><a href="https://soundcloud.com/hollownotempty">Listen</a></li>
-          </ul>
-        
-    </header>
+    <div id="page-container">
+        <div class="content-wrap">
+            <header>
+                <nav class="nav-bg-color">
+                    <div class="nav-wrapper container">
+                        <a href="{% url 'home' %}" class="brand-logo">Th Audio</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#">About</a></li>
+                            <li><a href="{% url 'booking' %}">Book</a></li>
+                            <li><a href="https://soundcloud.com/hollownotempty">Listen</a></li>
+                        </ul>
+                    </div>
+                </nav>
 
-    {% block content %}
-    {% endblock %}
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="https://soundcloud.com/hollownotempty">Listen</a></li>
+                </ul>
 
-    <footer class="page-footer footer-bg-color">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Tom Holohan Audio</h5>
-                    <p class="grey-text text-lighten-4">Music Producer, Mix/Master Engineer, Songwriter.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Follow Tom.</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://instagram.com/holoh.an"><i class="fab fa-instagram"></i></a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/hollownotempty"><i class="fab fa-twitter-square"></i></li>
-                    </ul>
+            </header>
+
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <footer class="page-footer footer-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Tom Holohan Audio</h5>
+                        <p class="grey-text text-lighten-4">Music Producer, Mix/Master Engineer, Songwriter.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Follow Tom.</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="https://facebook.com"><i
+                                        class="fab fa-facebook"></i></a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://instagram.com/holoh.an"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://twitter.com/hollownotempty"><i
+                                        class="fab fa-twitter-square"></i></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container center">
-                © 2021 Tom Holohan Audio
+            <div class="footer-copyright">
+                <div class="container center">
+                    © 2021 Tom Holohan Audio
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../static/js/script.js"></script>

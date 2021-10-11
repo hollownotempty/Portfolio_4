@@ -1,5 +1,7 @@
 from django import forms
 from .models import Appointment
+import datetime as dt
+HOUR_CHOICES = [(dt.time(hour=x), '{:02d}:00'.format(x)) for x in range(0, 24)]
 
 
 class BookingForm(forms.ModelForm):
@@ -12,4 +14,5 @@ class BookingForm(forms.ModelForm):
 
     class Meta:
         model = Appointment
-        fields = ('first_name', 'last_name', 'email', 'appointment_date', 'appointment_time', 'message')
+        fields = '__all__'
+        widgets = {'appointment_time': forms.Select(choices=HOUR_CHOICES)}

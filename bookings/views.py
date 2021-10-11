@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .forms import BookingForm
 # from django.http import HttpResponse
 
@@ -15,13 +16,8 @@ def returnBookingPage(request):
         form = BookingForm(request.POST)
         if form.is_valid:
             form.save()
-            first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
-            email = form.cleaned_data['email']
-            date = form.cleaned_data['appointment_date']
-            time = form.cleaned_data['appointment_time']
-            message = form.cleaned_data['message']
-            return redirect('home')
+            messages.success(request, 'Contact request submitted successfully.')
+            return redirect('booking')
 
     form = BookingForm()
     return render(request, 'booking.html', {'form': form})

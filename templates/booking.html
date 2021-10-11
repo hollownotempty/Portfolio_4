@@ -16,46 +16,51 @@
 <div id="form-container">
     <div class="form-container-inner container">
         <form action="" method="POST">
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input placeholder="First Name" id="first_name" type="text" class="validate">
-                        </div>
-                        <div class="input-field col s6">
-                            <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input placeholder="Email Address" id="email" type="email" class="validate">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <input placeholder="Date" id="date" type="text" class="datepicker">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <input placeholder="Time" type="text" class="timepicker">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea placeholder="Message" id="textarea1"
-                                        class="materialize-textarea"></textarea>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <button class="btn waves-effect waves-light form-submit-btn" type="submit" name="action">Submit
-                    </button>
-                </form>
-            </div>
+            {% csrf_token %}
+            {{form}}
+            <button type="submit">Submit</button>
         </form>
+        <!-- <form action="" method="POST">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="First Name" id="first_name" type="text" class="validate" required>
+                            </div>
+                            <div class="input-field col s6">
+                                <input placeholder="Last Name" id="last_name" type="text" class="validate" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Email Address" id="email" type="email" class="validate" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <input placeholder="Date" id="date" type="text" class="datepicker" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <input placeholder="Time" type="text" class="timepicker" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea placeholder="Message (Tell me about your project)" id="textarea1"
+                                            class="materialize-textarea"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <button class="btn waves-effect waves-light form-submit-btn" type="submit" name="action">Submit
+                        </button>
+                    </form>
+                </div>
+            </form> -->
     </div>
 </div>
 

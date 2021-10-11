@@ -12,4 +12,4 @@ class Appointment(models.Model):
     message = models.TextField(max_length=500)
 
     def __str__(self):
-        return str(self.first_name + self.last_name)
+        return str(self.last_name + ' ' + str(self.appointment_date))

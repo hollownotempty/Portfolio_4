@@ -2,9 +2,9 @@
 
 {% block content %}
 <div id="hero-section" class="hero-section-bg-color">
-    <div class="hero-section-inner container">
+    <div class="hero-section-inner container valign-wrapper">
         <div class="row hero-text-row">
-            <h2 class="col s6">Bring your ideas to life.</h2>
+            <h2 class="col s6 left-align">Bring your ideas to life.</h2>
         </div>
         <div class="hero-section-bottoms">
             <div class="row remove-bottom-margin hero-sub-text-row">
@@ -22,17 +22,17 @@
 <div id="book-call-section" class="book-call-bg-color">
     <div class="container">
         <div class="center">
-            <a class="waves-effect waves-light btn book-call-btn">Book A Call</a>
+            <a class="waves-effect waves-light btn book-call-btn" href="{% url 'booking' %}">Book A Call</a>
         </div>
         <div id="services" class="row remove-bottom-margin hide-on-small-only">
             <div class="col s4 center">
-                <p class="flow-text">SONGWRITING</p>
+                <p class="flow-text">SONGWRITING <i class="fas fa-music"></i></p>
             </div>
             <div class="col s4 center">
-                <p class="flow-text">MIXING</p>
+                <p class="flow-text">MIXING <i class="fab fa-mix"></i></p>
             </div>
             <div class="col s4 center">
-                <p class="flow-text">MASTERING</p>
+                <p class="flow-text">MASTERING <i class="fas fa-compact-disc"></i></p>
             </div>
         </div>
     </div>

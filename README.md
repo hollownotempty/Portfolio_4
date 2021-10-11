@@ -27,18 +27,27 @@ For the portfolio project I have created a site for clients to book appointment 
 
 ### Project Goals
 
+As a music producer full time, I was getting sick of losing track of my clients and relying on writing down dates and times for meetings. With this site, clients will able to book in with me themselves in a time that suits them and I will be able to see it all clearly on the admin page. 
+
 
 ### User Goals
+
+User's are coming to this site to learn about the producer, hear some of their work, see some client testimonials and ultimately book a call if they desire. 
 
 
 
 ## Flowchart
 
+![](Flowchart)
+
 
 ## User Stories
-
-### Player User Stories
-
+   1. As a {USER}, I want {TO BOOK A CALL}, so that {I CAN ORGANIZE A MEETING WITH THE PRODUCER}.
+   2. As a {USER}, I want {TO BE ABLE TO BE ABLE TO CANCEL OR RESCHEDULE MY MEETING}, so that {IF SOMETHING COMES UP I CAN ORGANIZE IT AROUND MY SCHEDULE}.
+   3. As a {admin}, I want {to be able to view/manage booked appointments}, so that {I can keep control over them}.
+   4. As a {user and admin}, I want {to receive an email confirming my appointment}, so that {I can be informed when it goes through}.
+   5. As a {user}, I want {to only be able to book a free slot}, so that {I can speed up the booking process}.
+   6. As a {user}, I want {a page I can go to with all the info about my appointment}, so that {I can cancel, reschedule or remind myself about my appointment info}.
 
 ## Technology Design
 
@@ -48,11 +57,18 @@ For the portfolio project I have created a site for clients to book appointment 
 ## Technologies Used
 
 ### Languages
+   1. HTML
+   2. CSS
+   3. Javascript
+   4. Python
 
-
+### Frameworks
+   1. [Django](https://www.djangoproject.com/) - The main framework used to create this project.
+   2. [Materialize CSS](https://materializecss.com/) - Used for responsive and easy css. 
 
 ### Applications
-
+   1. TinyPNG - Used to compress images
+   2. 
 
 
 ### Packages

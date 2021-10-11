@@ -18,11 +18,6 @@ def returnBookingPage(request):
         form = BookingForm(request.POST)
         if form.is_valid:
             form.save()
-            # subject = 'Thank you for your booking.'
-            # message = 'Thank you for booking in, I look forward to getting started on your project together./n I will be in touch soon regarding your booking.'
-            # from_email = settings.EMAIL_HOST_USER
-            # to_list = [BookingForm.email, settings.EMAIL_HOST_USER]
-            # send_mail(subject, message, from_email, to_list, fail_silently=True)
             messages.success(request, 'Contact request submitted successfully.')
             return redirect('booking')
 

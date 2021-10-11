@@ -67,10 +67,6 @@ a {
     height: calc(100vh - 56px);
 }
 
-/* .hero-sub-text-row {
-    padding-top: 206px;
-} */
-
 .hero-section-bottoms {
     position: absolute;
     bottom: 0;
@@ -124,10 +120,6 @@ a {
 
 /* ------------------------------------------------------- BOOKING PAGE */
 
-/* #booking-content-container {
-    height: calc(100vh - 285px);
-} */
-
 #booking-page-headline > div > h2 {
     margin-top: 0;
     padding-top: 5%;
@@ -147,9 +139,6 @@ a {
     background-color: #fafafa;
 }
 
-
-
-
 /* --------------------------- Utility */
 
 .remove-bottom-margin {
@@ -160,6 +149,3 @@ a {
     margin: 0;
 }
 
-/* select {
-    display: block;
-} */

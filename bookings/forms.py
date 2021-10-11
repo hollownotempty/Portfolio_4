@@ -10,7 +10,7 @@ class BookingForm(forms.ModelForm):
     # email = forms.EmailField()
     # date = forms.DateField()
     # time = forms.TimeField()
-    # message = forms.CharField(widget=forms.Textarea)
+    # message = forms.CharField()
 
     class Meta:
         model = Appointment

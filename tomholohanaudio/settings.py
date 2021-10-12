@@ -9,10 +9,10 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
 from pathlib import Path
 import os
 import dj_database_url
+from email_password import EMAIL_PASSWORD
 if os.path.isfile("env.py"):
     import env
 
@@ -20,7 +20,7 @@ if os.path.isfile("env.py"):
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'thomasholohan8@gmail.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_HOST_PASSWORD = EMAIL_PASSWORD
 EMAIL_PORT = 587
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

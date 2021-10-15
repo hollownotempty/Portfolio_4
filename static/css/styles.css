@@ -56,7 +56,7 @@ img {
 }
 
 .anim_gradient {
-    background: linear-gradient(271deg, #909090, #bfbfbf);
+    background: linear-gradient(271deg, #909090, #f7f9f9);
     background-size: 400% 400%;
 
     -webkit-animation: GradientBG 24s ease infinite;
@@ -90,6 +90,17 @@ img {
 
 .hero-text-row {
     margin-left: 0;
+}
+
+.hero-text-row h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    background-image: url('../../media/daw.jpg');
+    background-size: cover;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #hero-section {

@@ -68,7 +68,10 @@ User's are coming to this site to learn about the producer, hear some of their w
 
 ### Applications
    1. TinyPNG - Used to compress images
-   2. 
+   2. Gitpod - Cloud based IDE used for development
+   3. Heroku - Cloud platform used to host app
+   4. [Pexels](https://www.pexels.com/) - Stock image site used to source images
+   5. [Gradient Animator](https://www.gradient-animator.com/) - Used for creation of background gradients
 
 
 ### Packages
@@ -119,5 +122,8 @@ These are the steps used to deploy this application to Heroku:
 
 ### Coding tips and tricks
 
+1. [u/Lushac on Reddit](https://www.reddit.com/r/WebdevTutorials/comments/q8k8mu/image_inside_text_using_html_and_css/) - Background clip css trick on text
+
 ### Acknowledgments
 
+Thank you to the Code Institute Slack Community for the help with small problems. Thanks to Midoca, Below Human and Megan Nolan for giving their reviews for the website. 

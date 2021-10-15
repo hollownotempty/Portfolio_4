@@ -13,6 +13,7 @@ class BookingForm(forms.ModelForm):
     # message = forms.CharField()
 
     class Meta:
+        exclude = ['date_booked']
         model = Appointment
         fields = '__all__'
         widgets = {'appointment_time': forms.Select(choices=HOUR_CHOICES)}

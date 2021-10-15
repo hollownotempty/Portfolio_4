@@ -11,6 +11,7 @@ class Appointment(models.Model):
     appointment_date = models.DateField(null=False)
     appointment_time = models.TimeField(default=dt.time(00, 00))
     message = models.TextField(max_length=500)
+    date_booked = models.DateField(default=dt.date.today)
 
     def __str__(self):
         return str(self.last_name + ' ' + str(self.appointment_date))

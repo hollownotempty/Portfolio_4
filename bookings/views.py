@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.conf import settings
 from django.contrib import messages
 from django.core.mail import send_mail
-from django.template.loader import get_template
 from .forms import BookingForm
 # from django.http import HttpResponse
 
@@ -13,8 +12,6 @@ def returnHome(request):
     return render(request, 'home.html')
 
 
-email_template = get_template('email_template.html')
-
 
 def returnBookingPage(request):
 
@@ -24,7 +21,7 @@ def returnBookingPage(request):
             email = request.POST.get('email', '')
             form.save()
             subject = 'Your booking.'
-            message = email_template
+            message = 'Thanks for your booking!'
             from_email = settings.EMAIL_HOST_USER
             recipient_list = [email, ]
             send_mail(subject, message, from_email, recipient_list)

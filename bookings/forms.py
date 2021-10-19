@@ -1,7 +1,7 @@
 from django import forms
 from .models import Appointment
 import datetime as dt
-HOUR_CHOICES = [(dt.time(hour=x), '{:02d}:00'.format(x)) for x in range(0, 24)]
+HOUR_CHOICES = [(dt.time(hour=x), '{:02d}:00'.format(x)) for x in range(10, 19)]
 
 
 class BookingForm(forms.ModelForm):

@@ -12,7 +12,6 @@ def returnHome(request):
     return render(request, 'home.html')
 
 
-
 def returnBookingPage(request):
 
     if request.method == 'POST':

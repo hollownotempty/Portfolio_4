@@ -142,6 +142,16 @@ img {
     padding-bottom: 30px;
 }
 
+/* --------------------------- Carousel section */
+
+.carousel {
+    height: 420px;
+}
+
+.carousel .carousel-item {
+    width: 300px !important;
+}
+
 /* --------------------------- Book call section */
 
 .book-call-btn {

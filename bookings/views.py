@@ -1,11 +1,19 @@
 from django.shortcuts import render, redirect
 from django.conf import settings
 from django.contrib import messages
-from django.core.mail import send_mail
+
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import get_template
+from django.template import Context
 from .forms import BookingForm
-# from django.http import HttpResponse
+
 
 # Create your views here.
+
+# msg_html = render_to_string('email_template.html')
+
+plaintext_message = get_template('email_template.txt')
+html_message = get_template('email_template.html')
 
 
 def returnHome(request):
@@ -19,11 +27,12 @@ def returnBookingPage(request):
         if form.is_valid:
             email = request.POST.get('email', '')
             form.save()
-            subject = 'Your booking.'
-            message = 'Thanks for your booking!'
-            from_email = settings.EMAIL_HOST_USER
-            recipient_list = [email, ]
-            send_mail(subject, message, from_email, recipient_list)
+            subject, from_email, recipient_list = 'Your Booking', settings.EMAIL_HOST_USER, [email, ]
+            text_content = plaintext_message.render()
+            html_content = html_message.render()
+            msg = EmailMultiAlternatives(subject, text_content, from_email, recipient_list)
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
             messages.success(request, 'Contact request submitted successfully.')
             return redirect('booking')
 

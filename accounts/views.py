@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from . import views
 
 # Create your views here.
 
 
 def returnLogin(request):
-    return HttpResponse('Login Page')
+    return render(request, 'login.html')
 
 
 def returnSignup(request):
-    return HttpResponse('Signup Page')
+    return render(request, 'signup.html')

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div id="hero-section" class="hero-section-bg-color anim_gradient">
     <div class="hero-section-inner container valign-wrapper">
@@ -46,7 +46,7 @@
         </div>
 
         <div class="row testimonial-row">
-            <img src="media/midoca.jpg" alt="Midoca, recording artist." class="z-depth-2 col s8 testimonial-image">
+            <img src="{% static 'images/midoca.jpg' %}" alt="Midoca, recording artist." class="z-depth-2 col s8 testimonial-image">
             <div class="testimonial-text col s4">
                 <div>
                     <p class="right-align remove-margin">"Tom helped me develop a new sound for my project, couldn't
@@ -64,12 +64,12 @@
                     <p class="left-align remove-bottom-margin">- Below Human</p>
                 </div>
             </div>
-            <img src="media/below_human.jpg" alt="Below Human, metalcore band."
+            <img src="{% static 'images/below_human.jpg' %}" alt="Below Human, metalcore band."
                 class="testimonial-image z-depth-2 col s8">
         </div>
 
         <div class="row testimonial-row remove-bottom-margin">
-            <img src="media/megan_nolan.jpg" alt="Megan Nolan, singer and recording artist."
+            <img src="{% static 'images/megan_nolan.jpg' %}" alt="Megan Nolan, singer and recording artist."
                 class="testimonial-image z-depth-2 col s8">
             <div class="testimonial-text col s4">
                 <div>
@@ -87,7 +87,7 @@
         </div>
         <div class="carousel carousel-slider">
             <a class="carousel-item" href="#one!">
-                <img src="media/midoca.jpg" alt="Midoca, recording artist."
+                <img src="{% static 'images/midoca.jpg' %}" alt="Midoca, recording artist."
                     class="z-depth-2 testimonial-image">
                 <div class="testimonial-text">
                     <div>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </a>
-            <a class="carousel-item" href="#two!"><img src="media/below_human.jpg" alt="Below Human, metalcore band."
+            <a class="carousel-item" href="#two!"><img src="{% static 'images/below_human.jpg' %}" alt="Below Human, metalcore band."
                     class="testimonial-image z-depth-2">
                 <div class="testimonial-text">
                     <div>
@@ -108,7 +108,7 @@
                 </div>
             </a>
             <a class="carousel-item" href="#three!">
-                <img src="media/megan_nolan.jpg" alt="Megan Nolan, singer and recording artist."
+                <img src="{% static 'images/megan_nolan.jpg' %}" alt="Megan Nolan, singer and recording artist."
                     class="testimonial-image z-depth-2">
                 <div class="testimonial-text">
                     <div>

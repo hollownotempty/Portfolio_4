@@ -1,5 +1,3 @@
-/* --------------------------- Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400&display=swap');
 
 h1, h2, h3, h4, h5 {
@@ -29,6 +27,9 @@ a {
     color: #bfbfbf;
 }
 
+img {
+    border-radius: 50px;
+}
 
 /* --------------------------- Colors */
 
@@ -53,7 +54,7 @@ a {
 }
 
 .anim_gradient {
-    background: linear-gradient(271deg, #909090, #bfbfbf);
+    background: linear-gradient(271deg, #909090, #f7f9f9);
     background-size: 400% 400%;
 
     -webkit-animation: GradientBG 24s ease infinite;
@@ -87,6 +88,17 @@ a {
 
 .hero-text-row {
     margin-left: 0;
+}
+
+.hero-text-row h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    background-image: url('../../media/daw.jpg');
+    background-size: cover;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #hero-section {
@@ -126,6 +138,16 @@ a {
 
 #artist-testimonials-mobile {
     padding-bottom: 30px;
+}
+
+/* --------------------------- Carousel section */
+
+.carousel {
+    height: 420px;
+}
+
+.carousel .carousel-item {
+    width: 300px !important;
 }
 
 /* --------------------------- Book call section */

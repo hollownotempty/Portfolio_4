@@ -1,5 +1,3 @@
-/* --------------------------- Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400&display=swap');
 
 h1, h2, h3, h4, h5 {
@@ -95,7 +93,7 @@ img {
 .hero-text-row h2 {
     font-size: 5rem;
     font-weight: 800;
-    background-image: url('../../media/daw.jpg');
+    background-image: url('../images/daw.jpg');
     background-size: cover;
     
     background-clip: text;

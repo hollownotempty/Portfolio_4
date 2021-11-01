@@ -19,3 +19,12 @@
     <br>
     This was solved firstly by going to my google account and turning on the setting `Allow Less Secure Apps'. I then had to go [here](https://g.co/allowaccess) to unblock the app and allow it to log. 
     </details>
+
+- When creating the login and signup templates, they would render without the custom CSS with the following terminal error 
+```Refused to apply style from <URL> because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled angular```
+    <details>
+    <summary>Solution</summary>
+    <br>
+    Providing ```{% load static %}``` at the beginning of base.html using template tags instead of manually writing the css path caused the css to render. This required me to go through 
+    all of the existing media and switch it to a static link as well. 
+    </details>

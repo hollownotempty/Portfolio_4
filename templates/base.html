@@ -23,8 +23,12 @@
                         <ul class="right hide-on-med-and-down">
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'booking' %}">Book</a></li>
-                            <li><a href="{% url 'login' %}">Login</a></li>
-                            <li><a href="{% url 'signup' %}">Signup</a></li>
+                            {% if user.is_authenticated %}
+                                <li><a href="{% url 'logout' %}">Logout</a></li>
+                            {% else %}
+                                <li><a href="{% url 'login' %}">Login</a></li>
+                                <li><a href="{% url 'signup' %}">Signup</a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </nav>

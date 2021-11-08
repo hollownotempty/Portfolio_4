@@ -22,5 +22,11 @@ def login_user(request):
         return render(request, 'registration/login.html', {})
 
 
-def signup_user():
+def signup_user(request):
     return HttpResponse('Signup')
+
+
+def logout_user(request):
+    logout(request)
+    messages.success(request, ("Successfully logged out!"))
+    return redirect('home')

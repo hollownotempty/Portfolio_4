@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div id="booking-page-headline">
+        <div class="booking-page-headline-inner">
+            <h2>
+                Login
+            </h2>
+        </div>
+    </div>
+
+    <form class="col s12" action="" method="POST">
+        {% csrf_token %}
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="username" type="text" class="validate">
+                <label for="username">Username</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+    </form>
+</div>
+
+{% endblock %}

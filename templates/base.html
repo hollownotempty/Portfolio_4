@@ -37,9 +37,19 @@
                 </ul>
 
             </header>
+            
+            {% if messages %}
+                {% for message in messages %}
+                <div class="container messages">
+                    {{ message }}
+                </div>
+                {% endfor %}
+            {% endif %}
+            
 
             {% block content %}
             {% endblock %}
+
         </div>
 
         <footer class="page-footer footer-bg-color">
@@ -71,6 +81,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="../static/js/script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

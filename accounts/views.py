@@ -1,12 +1,26 @@
-from django.shortcuts import render
-from . import views
+from django.shortcuts import render, redirect, HttpResponse
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
 
 # Create your views here.
 
 
-def returnLogin(request):
-    return render(request, 'login.html')
+def login_user(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            messages.success(request, 'Successfully logged in!')
+            login(request, user)
+            return redirect('home')
+        else:
+            messages.success(request, ("There was an error logging in, try again..."))
+            return redirect('login.html')
+
+    else:
+        return render(request, 'registration/login.html', {})
 
 
-def returnSignup(request):
-    return render(request, 'signup.html')
+def signup_user():
+    return HttpResponse('Signup')

@@ -28,3 +28,8 @@
     Providing ```{% load static %}``` at the beginning of base.html using template tags instead of manually writing the css path caused the css to render. This required me to go through 
     all of the existing media and switch it to a static link as well. 
     </details>
+
+- Messages are meant to be displayed upon login or a failed login attempt. Login was successful as proven by the admin page opening up on the logged in profile, but the messages for failed login would not display on the login page 
+    <details>
+    <summary>Solution</summary>
+    </details>

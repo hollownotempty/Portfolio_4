@@ -19,7 +19,6 @@
         <div class="form-container-inner container">
             <form action="" method="POST">
                 {% csrf_token %}
-                {% include 'messages.html' %}
                 {{form|materializecss}}
                 <button class="btn waves-effect waves-light form-submit-btn" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>

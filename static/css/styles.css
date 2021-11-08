@@ -191,6 +191,12 @@ img {
     background-color: #fafafa;
 }
 
+/* --------------------------- Login + Signup Pages */
+
+.registration_content {
+    height: calc(100vh - 229px);
+}
+
 /* --------------------------- Utility */
 
 .remove-bottom-margin {

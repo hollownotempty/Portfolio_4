@@ -3,28 +3,49 @@
 {% load materializecss %}
 
 {% block content %}
+{% if user.is_authenticated %}
+    <div id="booking-content-container">
+        <div id="booking-page-headline">
+            <div class="booking-page-headline-inner container">
+                <h2>
+                    Book A Call
+                </h2>
+                <p>
+                    Organize a call to enquire about working together on your project.
+                </p>
+            </div>
+        </div>
+
+        <div id="form-container">
+            <div class="form-container-inner container">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{form|materializecss}}
+                    <button class="btn waves-effect waves-light form-submit-btn" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% else %}
+
 <div id="booking-content-container">
     <div id="booking-page-headline">
         <div class="booking-page-headline-inner container">
             <h2>
                 Book A Call
             </h2>
-            <p>
-                Organize a call to enquire about working together on your project.
-            </p>
         </div>
     </div>
 
     <div id="form-container">
         <div class="form-container-inner container">
-            <form action="" method="POST">
-                {% csrf_token %}
-                {{form|materializecss}}
-                <button class="btn waves-effect waves-light form-submit-btn" type="submit" name="action">Submit
-                    <i class="material-icons right">send</i>
-                </button>
-            </form>
+            <p>Log in or sign up now to book a call!</p>
         </div>
     </div>
 </div>
+
+{% endif %}
 {% endblock %}

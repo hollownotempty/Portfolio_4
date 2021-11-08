@@ -4,6 +4,7 @@
 
 {% block content %}
 {% if user.is_authenticated %}
+
     <div id="booking-content-container">
         <div id="booking-page-headline">
             <div class="booking-page-headline-inner container">
@@ -31,7 +32,7 @@
 
 {% else %}
 
-<div id="booking-content-container">
+<div id="booking-content-container" class="book-no-auth">
     <div id="booking-page-headline">
         <div class="booking-page-headline-inner container">
             <h2>

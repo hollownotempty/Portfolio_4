@@ -172,6 +172,10 @@ img {
 
 /* ------------------------------------------------------- BOOKING PAGE */
 
+.book-no-auth {
+    height: calc(100vh - 293px);
+}
+
 #booking-page-headline > div > h2 {
     margin-top: 0;
     padding-top: 5%;
@@ -193,8 +197,12 @@ img {
 
 /* --------------------------- Login + Signup Pages */
 
-.registration_content {
+.login_content {
     height: calc(100vh - 229px);
+}
+
+.register_content {
+    height: 100vh;
 }
 
 /* --------------------------- Utility */

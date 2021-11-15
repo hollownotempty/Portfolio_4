@@ -1,24 +1,25 @@
 # Tom Holohan Audio
 
-For the portfolio project I have created a site for clients to book appointment times with a music producer to discuss their project. 
+For the portfolio project I have created a site for clients to send their music a music producer to be mixed and mastered remotely. 
 
 ## Contents
 
 1. [Strategy](#strategy)
    1. [Project Goals](#project-goals)
    2. [User Goals](#user-goals)
-2. [Flowchart](#flowchart)
-3. [User Stories](#user-stories)
+2. [Structure](#structure)
+3. [Flowchart](#flowchart)
+4. [User Stories](#user-stories)
    1. [Player User Stories](#player-user-stories)
-4. [Technology Design](#technology-design)
+5. [Technology Design](#technology-design)
    1. [User Interface](#user-interface)
-5. [Technologies Used](#technologies-used)
+6. [Technologies Used](#technologies-used)
    1. [Languages](#languages)
    2. [Applications](#applications)
    3. [Packages](#packages)
-6. [Validation](#validation)
-7. [Testing](#testing)
-8. [Deployment](#deployment)
+7. [Validation](#validation)
+8. [Testing](#testing)
+9. [Deployment](#deployment)
    1. [Forking the Github Repository](#forking-the-github-repository)
    2. [Making a Local Clone](#making-a-local-clone)
    3. [Heroku](#heroku)
@@ -27,14 +28,36 @@ For the portfolio project I have created a site for clients to book appointment 
 
 ### Project Goals
 
-As a music producer full time, I was getting sick of losing track of my clients and relying on writing down dates and times for meetings. With this site, clients will able to book in with me themselves in a time that suits them and I will be able to see it all clearly on the admin page. 
+As a producer, a site like this makes handling clients easy. With an easy submission form users can submit their [stems](https://www.musicgateway.com/blog/how-to/stems-in-music-production-what-are-they-why-are-they-useful) to be mixed and mastered by a producer.
 
 
 ### User Goals
 
-User's are coming to this site to learn about the producer, hear some of their work, see some client testimonials and ultimately book a call if they desire. 
+User's are coming to this site to learn about the producer, hear some of their work, see some client testimonials and ultimately submit music to be mixed and/or mastered if they desire. 
 
+## Structure
 
+All pages on this site contain a nav bar and footer that contain links to the other pages on the site as well as social media links and small about section on the producer.
+
+### Home
+
+The home screen is simple enough. It contains:
+
+   - A hero section with a tagline
+   - A button that also leads to the submission page
+   - Artist testimonials
+
+### Login/Signup
+
+A simple form system for the purpose of signing in and signing up.
+
+### Submit Page
+
+A page with one form on it that takes the users info along with their stems link. 
+
+### Admin Appointments Page
+
+A page for the admin that displays all the current submissions with the given details by the user.
 
 ## Flowchart
 
@@ -42,16 +65,23 @@ User's are coming to this site to learn about the producer, hear some of their w
 
 
 ## User Stories
-   1. As a {USER}, I want {TO BOOK A CALL}, so that {I CAN ORGANIZE A MEETING WITH THE PRODUCER}.
-   2. As a {admin}, I want {to be able to view/manage booked appointments}, so that {I can keep control over them}.
-   3. As a {user and admin}, I want {to receive an email confirming my appointment}, so that {I can be informed when it goes through}.
-   4. As a {user}, I want {to only be able to book a free slot}, so that {I can speed up the booking process}.
-   5. As a {user}, I want {a page I can go to with all the info about my appointment}, so that {I can cancel, reschedule or remind myself about my appointment info}.
+   1. As a {USER}, I want {TO CONTACT THE PRODUCER}, so that {I CAN GET THEM TO WORK ON MY MUSIC}.
+   2. As a {admin}, I want {to be able to view/manage submitted info}, so that {I can keep control over them}.
+   3. As a {user and admin}, I want {to receive an email confirming my submission}, so that {I can be informed when it goes through}.
+   4. As a {USER}, I want {TO UPLOAD A LINK TO MY FILES}, so that {THE ADMIN CAN DOWNLOAD THEM}.
+   5. As a {ADMIN}, I want {TO BE ABLE TO SEND THE USERS THEIR FILES}, so that {THEY CAN HAVE THE FINISHED PROJECT}.
+   6. As a {ADMIN}, I want {TO BE ABLE TO DOWNLOAD THE USERS STEMS}, so that {I CAN WORK ON THEIR PROJECT}.
+   8. As a {user}, I want {a page I can go to with all the info about my appointment}, so that {I can cancel, reschedule or remind myself about my appointment info}.
+   9. As a {USER}, I want {TO SEE TESTIMONIALS FROM PAST CLIENTS}, so that {I CAN SEE WHAT PEOPLE ARE SAYING BEFORE I HIRE THE PRODUCER}.
+   10. 
 
 ## Technology Design
 
-### User interface
+### Data Models
+   This project uses one main data model and that is the Appointment model. This is the model that logs all the info that the user gives in the ModelForm, including first name, last name, email, file link and the date it was booked. 
 
+### User Interface
+   The interface for this website did not need to be too complicated, as a simple site like this does not need to reinvent the wheel. Everything was styled using MaterializeCSS to keep a cohesive look. Users are also presented with djangos built in messages upon certain actions (such as loggin in, loggin out, submitting a form etc) to keep them informed on their journey through the site.
 
 ## Technologies Used
 
@@ -72,10 +102,7 @@ User's are coming to this site to learn about the producer, hear some of their w
    3. Heroku - Cloud platform used to host app
    4. [Pexels](https://www.pexels.com/) - Stock image site used to source images
    5. [Gradient Animator](https://www.gradient-animator.com/) - Used for creation of background gradients
-
-
-### Packages
-
+   6. LucidChart - Used to create the flowchart for this project. 
 
 ## Validation 
 

@@ -8,8 +8,7 @@ class Appointment(models.Model):
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     email = models.EmailField()
-    appointment_date = models.DateField(null=False)
-    appointment_time = models.TimeField(default=dt.time(00, 00))
+    file_link = models.CharField(max_length=200)
     message = models.TextField(max_length=500)
     date_booked = models.DateField(default=dt.date.today)
 

@@ -4,7 +4,7 @@ import datetime as dt
 HOUR_CHOICES = [(dt.time(hour=x), '{:02d}:00'.format(x)) for x in range(10, 19)]
 
 
-class BookingForm(forms.ModelForm):
+class SubmitForm(forms.ModelForm):
     # first_name = forms.CharField()
     # last_name = forms.CharField()
     # email = forms.EmailField()

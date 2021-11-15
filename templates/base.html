@@ -22,7 +22,7 @@
                                 class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
                             <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'booking' %}">Book</a></li>
+                            <li><a href="{% url 'submit' %}">Submit</a></li>
                             {% if user.is_authenticated %}
                                 {% if user.is_superuser %}
                                     <li><a href="{% url 'appointments' %}">Appointments</a></li>
@@ -38,7 +38,7 @@
 
                 <ul class="sidenav" id="mobile-demo">
                     <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'booking' %}">Book</a></li>
+                    <li><a href="{% url 'submit' %}">Submit</a></li>
                     <li><a href="{% url 'login' %}">Login</a></li>
                     <li><a href="{% url 'signup' %}">Signup</a></li>
                 </ul>

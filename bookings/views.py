@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 from django.template import Context
-from .forms import BookingForm
+from .forms import SubmitForm
 from .models import Appointment
 
 
@@ -21,14 +21,14 @@ def returnHome(request):
     return render(request, 'home.html')
 
 
-def returnBookingPage(request):
+def submit_page(request):
 
     if request.method == 'POST':
-        form = BookingForm(request.POST)
+        form = SubmitForm(request.POST)
         if form.is_valid:
             email = request.POST.get('email', '')
             form.save()
-            subject, from_email, recipient_list = 'Your Booking', settings.EMAIL_HOST_USER, [email, ]
+            subject, from_email, recipient_list = 'Your Submission', settings.EMAIL_HOST_USER, [email, ]
             text_content = plaintext_message.render()
             html_content = html_message.render()
             msg = EmailMultiAlternatives(subject, text_content, from_email, recipient_list)
@@ -37,7 +37,7 @@ def returnBookingPage(request):
             messages.success(request, 'Contact request submitted successfully.')
             return redirect('booking')
 
-    form = BookingForm()
+    form = SubmitForm()
     return render(request, 'booking.html', {'form': form})
 
 

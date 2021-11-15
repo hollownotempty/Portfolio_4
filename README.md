@@ -43,11 +43,10 @@ User's are coming to this site to learn about the producer, hear some of their w
 
 ## User Stories
    1. As a {USER}, I want {TO BOOK A CALL}, so that {I CAN ORGANIZE A MEETING WITH THE PRODUCER}.
-   2. As a {USER}, I want {TO BE ABLE TO BE ABLE TO CANCEL OR RESCHEDULE MY MEETING}, so that {IF SOMETHING COMES UP I CAN ORGANIZE IT AROUND MY SCHEDULE}.
-   3. As a {admin}, I want {to be able to view/manage booked appointments}, so that {I can keep control over them}.
-   4. As a {user and admin}, I want {to receive an email confirming my appointment}, so that {I can be informed when it goes through}.
-   5. As a {user}, I want {to only be able to book a free slot}, so that {I can speed up the booking process}.
-   6. As a {user}, I want {a page I can go to with all the info about my appointment}, so that {I can cancel, reschedule or remind myself about my appointment info}.
+   2. As a {admin}, I want {to be able to view/manage booked appointments}, so that {I can keep control over them}.
+   3. As a {user and admin}, I want {to receive an email confirming my appointment}, so that {I can be informed when it goes through}.
+   4. As a {user}, I want {to only be able to book a free slot}, so that {I can speed up the booking process}.
+   5. As a {user}, I want {a page I can go to with all the info about my appointment}, so that {I can cancel, reschedule or remind myself about my appointment info}.
 
 ## Technology Design
 
@@ -61,6 +60,7 @@ User's are coming to this site to learn about the producer, hear some of their w
    2. CSS
    3. Javascript
    4. Python
+   5. Django Template Language
 
 ### Frameworks
    1. [Django](https://www.djangoproject.com/) - The main framework used to create this project.

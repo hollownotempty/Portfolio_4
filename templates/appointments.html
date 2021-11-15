@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% if user.is_superuser %}
+    <div class="container">
+        <h1>
+            Appointments
+        </h1>
+        <div class="row">
+            {% for a in appointments %}
+            <div class="appointment-display col s6">
+                    <p>{{ a.first_name }} {{ a.last_name }}</p>
+                    <p>Appointment Date: {{ a.appointment_date }} {{ a.appointment_time }}</p> 
+                    <p>Email: {{ a.email }}</p>
+                    <p>Message: {{ a.message }}</p>
+                <!-- <br> -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% else %}
+    <div class="container">
+        <h1>
+            You are not an admin!
+        </h1>
+        <p>
+            You have insufficient privileges to access this page. 
+        </p>
+        <br>
+        <p><a href="{% url 'home' %}">Return Home</a></p>
+    </div>
+{% endif %}
+{% endblock %}

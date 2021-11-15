@@ -205,6 +205,13 @@ img {
     height: 969px;
 }
 
+/* --------------------------- Appointments Page */
+
+.appointment-display{
+    border: #000000 1px solid;
+    padding-left: 30px;
+}
+
 /* --------------------------- Utility */
 
 .remove-bottom-margin {

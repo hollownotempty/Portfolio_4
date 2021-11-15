@@ -6,6 +6,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 from django.template import Context
 from .forms import BookingForm
+from .models import Appointment
 
 
 # Create your views here.
@@ -42,3 +43,9 @@ def returnBookingPage(request):
 
 def returnAboutPage(request):
     return render(request, 'about.html')
+
+
+def return_appointments(request):
+    return render(request, 'appointments.html', {
+        'appointments': Appointment.objects.all(),
+        })

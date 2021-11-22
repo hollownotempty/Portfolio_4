@@ -10,6 +10,9 @@ p {
     font-weight: 400;
 }
 
+html {
+    overflow: hidden;
+}
 
 /* --------------------------- General */
 
@@ -31,13 +34,23 @@ img {
     border-radius: 50px;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content-wrap {
+    padding-bottom: 325px;
+}
+
 /* --------------------------- Colors */
 
 .nav-bg-color {
     background-color: #212121;
 }
 
-.hero-section-bg-color {
+.off-white {
     background-color: #fafafa;
 }
 
@@ -48,31 +61,6 @@ img {
 .book-call-bg-color {
     background-color: #212121;
 }
-
-.artist-testimonials-bg-color {
-    background-color: #fafafa;
-}
-
-.anim_gradient {
-    background: linear-gradient(271deg, #909090, #f7f9f9);
-    background-size: 400% 400%;
-
-    -webkit-animation: GradientBG 24s ease infinite;
-    animation: AnimationName 24s ease infinite;
-}
-
-@-webkit-keyframes GradientBG {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes GradientBG {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-;
 
 /* ------------------------------------------------------- HOME PAGE */
 /* --------------------------- Hero section */
@@ -210,6 +198,24 @@ img {
 .appointment-display{
     border: #000000 1px solid;
     padding-left: 30px;
+}
+
+/* --------------------------- About Page */
+
+.about-para {
+    text-align: justify;
+}
+
+.about-portrait {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 993px){
+    .about-portrait {
+        height: 500px;
+    }
 }
 
 /* --------------------------- Utility */

@@ -3,12 +3,12 @@
 {% block content %}
 {% if user.is_superuser %}
     <div class="container">
-        <h1>
+        <h3>
             Appointments
-        </h1>
+        </h3>
         <div class="row">
             {% for a in appointments %}
-            <div class="appointment-display col s6">
+            <div class="appointment-display col s12 m6">
                     <p>{{ a.first_name }} {{ a.last_name }}</p>
                     <a href="{{ a.file_link }}">Stems/Stereo File</a>
                     <p>Email: {{ a.email }}</p>

@@ -1,14 +1,23 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div id="about-container" class="container">
-    <h1>About</h1>
+    <h3>About</h3>
     <div class="row">
-        <div class="col s6">
+        <div class="col s12 about-para">
             <p>
                 Tom Holohan is a music producer, mix/master engineer and songwriter from Dublin, Ireland. Now based in
                 London, Tom has had the pleasure to work with a wide range of acts in all facets of their projects.
             </p>
+            <br>
+            <p>
+                After completing a Bachelors degree in Music Production from Pulse College in Dublin, Tom relocated to
+                London to continue is endeavours into music, working alongside artists in many styles (metal, pop, rock,
+                electronic, hip-hop and more) to create art they can be proud of.
+            </p>
+        </div>
+        <div class="col s12">
+            <img src="{% static 'images/tom_portrait.jpg' %}" alt="Tom Holohan, Producer" class="about-portrait">
         </div>
     </div>
 </div>

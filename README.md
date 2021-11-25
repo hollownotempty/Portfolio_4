@@ -28,7 +28,7 @@ For the portfolio project I have created a site for clients to send their music 
 
 ### Project Goals
 
-As a producer, a site like this makes handling clients easy. With an easy submission form users can submit their [stems](https://www.musicgateway.com/blog/how-to/stems-in-music-production-what-are-they-why-are-they-useful) to be mixed and mastered by a producer.
+As a producer, a site like this makes handling clients easy. With an easy submission form users can submit their [stems](https://www.musicgateway.com/blog/how-to/stems-in-music-production-what-are-they-why-are-they-useful) to be mixed and mastered by a producer. This project originally started out as a system for booking calls, but ultimately the goal from a meeting is to start working on the music, right? After some thought about where the project was going I pivoted to a new system where clients can submit their music directly with notes and info about their project so that I can download the files from the site, get to work and send them back the finished project. 
 
 
 ### User Goals
@@ -61,8 +61,11 @@ A page for the admin that displays all the current submissions with the given de
 
 ## Flowchart
 
-![](Flowchart)
+![Flowchart](static/images/flowchart/booking_flowchart.pdf)
 
+## Wireframes
+
+The wireframes for this project can be viewed [here](static/images/wireframes)
 
 ## User Stories
    1. As a {USER}, I want {TO CONTACT THE PRODUCER}, so that {I CAN GET THEM TO WORK ON MY MUSIC}.

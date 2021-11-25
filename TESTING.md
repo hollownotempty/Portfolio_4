@@ -37,3 +37,8 @@
     <details>
     <summary>Solution</summary>
     </details>
+
+- This isn't necessarily a bug but due to Django's default User model using the username field to identify a user and the email field not being unique, multiple users are able to signup using the same email. Ideally both the username and the email would be unique.
+    <details>
+    <summary>Solution</summary>
+    </details>

@@ -1,6 +1,9 @@
 from django.shortcuts import render, redirect, HttpResponse
+from django.conf import settings
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import get_template
 from django.contrib import messages
 from .forms import RegisterUserForm
 
@@ -29,6 +32,10 @@ def logout_user(request):
     return redirect('home')
 
 
+plaintext_message = get_template('signup_email.txt')
+html_message = get_template('signup_email.html')
+
+
 def register_user(request):
     if request.method == "POST":
         form = RegisterUserForm(request.POST)
@@ -36,9 +43,17 @@ def register_user(request):
             form.save()
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
+            email = form.cleaned_data['email']
             user = authenticate(username=username, password=password)
             login(request, user)
+            subject, from_email, recipient_list = 'Thank you for signing up!', settings.EMAIL_HOST_USER, [email, ]
+            text_content = plaintext_message.render()
+            html_content = html_message.render()
+            msg = EmailMultiAlternatives(subject, text_content, from_email, recipient_list)
+            msg.attach_alternative(html_content, "text/html")
+            msg.send()
             messages.success(request, ("Registration successful!"))
+            return redirect('home')
     else:
         form = RegisterUserForm()
 

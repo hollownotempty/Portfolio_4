@@ -35,7 +35,7 @@ def submit_page(request):
             msg.attach_alternative(html_content, "text/html")
             msg.send()
             messages.success(request, 'Contact request submitted successfully.')
-            return redirect('booking')
+            return redirect('submit')
 
     form = SubmitForm()
     return render(request, 'booking.html', {'form': form})

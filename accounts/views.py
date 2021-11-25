@@ -43,5 +43,12 @@ def register_user(request):
         form = RegisterUserForm()
 
     return render(request, 'registration/register_user.html', {
-        'form':form,
+        'form': form,
     })
+
+
+def view_profile(request):
+    context = {
+        'user': request.user
+    }
+    return render(request, 'profile.html', context)

@@ -1,16 +1,17 @@
 from django.db import models
-import datetime as dt
+from django.conf import settings
 
 # Create your models here.
 
 
 class Appointment(models.Model):
-    first_name = models.CharField(max_length=200)
-    last_name = models.CharField(max_length=200)
-    email = models.EmailField()
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        default=1,
+        on_delete=models.CASCADE)
+    reference_mix = models.CharField(max_length=200)
     file_link = models.CharField(max_length=200)
     message = models.TextField(max_length=500)
-    date_booked = models.DateField(default=dt.date.today)
 
     def __str__(self):
-        return str(self.last_name + ' ' + str(self.appointment_date))
+        return str(self.user)

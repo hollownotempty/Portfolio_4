@@ -1,7 +1,6 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect
 from django.conf import settings
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import UserCreationForm
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 from django.contrib import messages
@@ -25,6 +24,7 @@ def login_user(request):
 
     else:
         return render(request, 'registration/login.html', {})
+
 
 def logout_user(request):
     logout(request)

@@ -10,9 +10,9 @@
         <div class="row">
             {% for a in appointments %}
             <div class="appointment-display col s12 m6">
-                    <p>{{ a.first_name }} {{ a.last_name }}</p>
+                    <p>Username: {{ a.user }}</p>
+                    <p>Email: {{ a.user.email }}</p>
                     <a href="{{ a.file_link }}">Stems/Stereo File</a>
-                    <p>Email: {{ a.email }}</p>
                     <p>Message: {{ a.message }}</p>
                 <!-- <br> -->
             </div>

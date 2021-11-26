@@ -155,6 +155,7 @@ These are the steps used to deploy this application to Heroku:
 ### Coding tips and tricks
 
 1. [u/Lushac on Reddit](https://www.reddit.com/r/WebdevTutorials/comments/q8k8mu/image_inside_text_using_html_and_css/) - Background clip css trick on text
+2. [CodingEntrepreneurs on YouTube](https://www.youtube.com/watch?v=2h57cqFRcqg) - Save current user to database upon form submission
 
 ### Acknowledgments
 

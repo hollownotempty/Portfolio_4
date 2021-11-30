@@ -29,7 +29,7 @@ def submit_page(request):
             instance = form.save()
             instance.user = request.user
             instance.save()
-            email = request.POST.get('email', '')
+            email = instance.user.email
             subject, from_email, recipient_list = 'Your Submission', settings.EMAIL_HOST_USER, [email, ]
             text_content = plaintext_message.render()
             html_content = html_message.render()

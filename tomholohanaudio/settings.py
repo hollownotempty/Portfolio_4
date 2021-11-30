@@ -19,7 +19,7 @@ if os.path.isfile("env.py"):
 # for gmail or google apps
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'thomasholohan8@gmail.com'
+EMAIL_HOST_USER = 'thaudioenquiry@gmail.com'
 EMAIL_HOST_PASSWORD = EMAIL_PASSWORD
 EMAIL_PORT = 587
 

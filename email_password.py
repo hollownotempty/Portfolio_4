@@ -1,1 +1,1 @@
-EMAIL_PASSWORD = 'Purgatory666'
+EMAIL_PASSWORD = 'hr3[Gd}J9FPn?4rx'

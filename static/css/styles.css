@@ -192,8 +192,10 @@ footer {
 /* --------------------------- Appointments Page */
 
 .appointment-display{
-    border: #000000 1px solid;
+    /* border: #000000 0.3px solid; */
     padding-left: 30px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* --------------------------- About Page */

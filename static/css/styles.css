@@ -136,6 +136,10 @@ footer {
 
 /* --------------------------- Book call section */
 
+#book-call-section {
+    color: #fafafa;
+}
+
 .book-call-btn {
     margin: 20px 0px;
     background-color: #fafafa;
@@ -150,8 +154,11 @@ footer {
 }
 
 #services p {
-    color: #fafafa;
     font-size: large;
+}
+
+#booking-tagline p {
+    text-align: center;
 }
 
 /* ------------------------------------------------------- BOOKING PAGE */

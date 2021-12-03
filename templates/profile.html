@@ -8,9 +8,14 @@
         <p>Username: {{ user }}</p>
         <p>Email: {{ user.email }}</p>
         <h3>Submission History:</h3>
-        <div>
-
-        </div>
+        {% for a in submissions %}
+            <div class="profile-submission-display col s12">
+                    <p>Submitted on: {{ a.date_booked }}</p>
+                    <p>Your submitted files can be viewed <a href="{{ a.file_link }}" class="links">here</a>.</p>
+                    <p>Your Message: {{ a.message }}</p>
+                <!-- <br> -->
+            </div>
+        {% endfor %}
     {% else %}
         <p>Login to view your details.</p>
     {% endif %}

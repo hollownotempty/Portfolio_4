@@ -5,6 +5,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 from django.contrib import messages
 from .forms import RegisterUserForm
+from bookings.models import Appointment
 
 # Create your views here.
 
@@ -63,7 +64,9 @@ def register_user(request):
 
 
 def view_profile(request):
+    user_submissions = Appointment.objects.filter(user=request.user)
     context = {
-        'user': request.user
+        'user': request.user,
+        'submissions': user_submissions
     }
     return render(request, 'profile.html', context)

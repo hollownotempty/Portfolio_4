@@ -32,7 +32,7 @@ def logout_user(request):
     messages.success(request, ("Successfully logged out!"))
     return redirect('home')
 
-
+# Email templates to be sent to the user upon signup
 plaintext_message = get_template('signup_email.txt')
 html_message = get_template('signup_email.html')
 
@@ -47,6 +47,7 @@ def register_user(request):
             email = form.cleaned_data['email']
             user = authenticate(username=username, password=password)
             login(request, user)
+            # Following code sends a confirmation email to the user
             subject, from_email, recipient_list = 'Thank you for signing up!', settings.EMAIL_HOST_USER, [email, ]
             text_content = plaintext_message.render()
             html_content = html_message.render()
@@ -64,6 +65,7 @@ def register_user(request):
 
 
 def view_profile(request):
+    # Allows the display of the users previous submissions on their page
     user_submissions = Appointment.objects.filter(user=request.user)
     context = {
         'user': request.user,

@@ -8,6 +8,8 @@
         <p>Username: {{ user }}</p>
         <p>Email: {{ user.email }}</p>
         <h3>Submission History:</h3>
+        <!-- Displays the users own bookings to them by accessing 
+        any submissions made by the currently logged in user -->
         {% for a in submissions %}
             <div class="profile-submission-display col s12">
                     <p>Submitted on: {{ a.date_booked }}</p>

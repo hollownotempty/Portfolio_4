@@ -6,6 +6,11 @@ import datetime
 
 
 class Appointment(models.Model):
+    # This is the model for a submission to the site. 
+    # It logs the currently logged in user and requests 
+    # them to give a reference link to a song, 
+    # a dropbox link to their audio, a personal message 
+    # and also the date at the time of submission.
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         default=1,

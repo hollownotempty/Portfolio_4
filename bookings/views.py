@@ -11,7 +11,7 @@ from .models import Appointment
 
 # Create your views here.
 
-
+# Templates for the confirmation email to be sent in the submit_page view.
 plaintext_message = get_template('email_template.txt')
 html_message = get_template('email_template.html')
 
@@ -28,6 +28,8 @@ def submit_page(request):
             instance = form.save()
             instance.user = request.user
             instance.save()
+            # The following code sends an email upon form completion to the 
+            # email corresponding with the currently logged in user.
             email = instance.user.email
             subject, from_email, recipient_list = 'Your Submission', settings.EMAIL_HOST_USER, [email, ]
             text_content = plaintext_message.render()
@@ -47,6 +49,8 @@ def returnAboutPage(request):
 
 
 def return_appointments(request):
+    # Allows the display of all objects in the Appointment model on the 
+    # appointments page.
     return render(request, 'appointments.html', {
         'appointments': Appointment.objects.all(),
         })

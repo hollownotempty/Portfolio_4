@@ -34,6 +34,7 @@
                             <li><a href="{% url 'about' %}">About</a></li>
                             <li><a href="{% url 'submit' %}">Submit</a></li>
                             {% if user.is_authenticated %}
+                                <!-- Displays the link to the submissions page only to an admin -->
                                 {% if user.is_superuser %}
                                     <li><a href="{% url 'appointments' %}">Submissions</a></li>
                                 {% endif %}
@@ -47,6 +48,7 @@
                     </div>
                 </nav>
 
+                <!-- Sidenav is activated on mobile devices. -->
                 <ul class="sidenav" id="mobile-demo">
                     <li><a href="{% url 'about' %}">About</a></li>
                     <li><a href="{% url 'submit' %}">Submit</a></li>

@@ -2,12 +2,17 @@
 {% block title %} Submissions | Tom Holohan Audio {% endblock %}
 {% load static %}
 {% block content %}
+
+<!-- if statement used to display this page only to admins, it normally 
+isn't shown in the nav but if a user manages to find the link this 
+will prevent them from accessing the page. -->
 {% if user.is_superuser %}
     <div class="container">
         <h3>
             Appointments
         </h3>
         <div class="row">
+            <!-- Renders all appointment objects in individual divs -->
             {% for a in appointments %}
             <div class="appointment-display col s12">
                     <p>Username: {{ a.user }}</p>

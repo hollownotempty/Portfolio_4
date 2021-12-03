@@ -40,7 +40,7 @@ def submit_page(request):
             return redirect('submit')
 
     form = SubmitForm()
-    return render(request, 'booking.html', {'form': form})
+    return render(request, 'submit.html', {'form': form})
 
 
 def returnAboutPage(request):

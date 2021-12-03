@@ -40,6 +40,12 @@ footer {
     padding-bottom: 325px;
 }
 
+footer ul li {
+    font-size: 25px;
+    display: inline;
+    margin: 5px;
+}
+
 /* --------------------------- Colors */
 
 .nav-bg-color {

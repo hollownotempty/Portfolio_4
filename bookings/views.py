@@ -11,7 +11,6 @@ from .models import Appointment
 
 # Create your views here.
 
-# msg_html = render_to_string('email_template.html')
 
 plaintext_message = get_template('email_template.txt')
 html_message = get_template('email_template.html')

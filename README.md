@@ -109,9 +109,10 @@ The wireframes for this project can be viewed [here](static/images/wireframes)
    6. LucidChart - Used to create the flowchart for this project. 
 
 ## Validation 
-   - All Python code has been validated using the [PEP8 Online Check](http://pep8online.com/)
-   - HTML has been validated using the [W3C validator](https://validator.w3.org/nu/) (ignoring errors thrown by the django template language)
-   - 
+All validations passed with no errors (except for HTML, which had none important errors thrown by the django template language that were ignored)
+      - All Python code has been validated using the [PEP8 Online Check](http://pep8online.com/)
+      - HTML has been validated using the [W3C validator](https://validator.w3.org/nu/)
+      - CSS has been validated using the [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
 
 ## Testing
 

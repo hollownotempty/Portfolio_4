@@ -10,19 +10,19 @@ For the portfolio project I have created a site for clients to send their music 
 2. [Structure](#structure)
 3. [Flowchart](#flowchart)
 4. [User Stories](#user-stories)
-   1. [Player User Stories](#player-user-stories)
 5. [Technology Design](#technology-design)
    1. [User Interface](#user-interface)
 6. [Technologies Used](#technologies-used)
    1. [Languages](#languages)
-   2. [Applications](#applications)
-   3. [Packages](#packages)
+   2. [Frameworks](#frameworks)
+   3. [Applications](#applications)
 7. [Validation](#validation)
 8. [Testing](#testing)
 9. [Deployment](#deployment)
    1. [Forking the Github Repository](#forking-the-github-repository)
    2. [Making a Local Clone](#making-a-local-clone)
    3. [Heroku](#heroku)
+10. [Credits](#credits)
 
 ## Strategy
 
@@ -78,7 +78,6 @@ The wireframes for this project can be viewed [here](static/images/wireframes)
    9. As a {USER}, I want {TO SEE TESTIMONIALS FROM PAST CLIENTS}, so that {I CAN SEE WHAT PEOPLE ARE SAYING BEFORE I HIRE THE PRODUCER}.
    10. As a {ADMIN}, I want {THE SUBMISSIONS REVIEW PAGE TO BE PRIVATE}, so that {REGULAR USERS CANT SEE/DOWNLOAD OTHERS FILES}.
    11. As a {USER}, I want {SITE MESSAGES UPON SITE ACTIONS}, so that {I CAN GET FEEDBACK IF I HAVE CORRENTLY OR INCORRECTLY USED THE SITE}.
-   12. As a {ADMIN}, I want {THE CONFIRMATION EMAIL TO SEND AN INVOICE TO THE CLIENT}, so that {THEY CAN PAY FOR THE SERVICE USING PAYPAL}.
 
 ## Technology Design
 

@@ -14,7 +14,7 @@
 </head>
 <body>
     <div id="page-container">
-        <div class="content-wrap off-white">
+        <div class="content-wrap gradient-palette-color">
 
             {% if messages %}
                 {% for message in messages %}
@@ -25,7 +25,7 @@
             {% endif %}
 
             <header>
-                <nav class="nav-bg-color">
+                <nav class="darkblue-palette-color">
                     <div class="nav-wrapper container">
                         <a href="{% url 'home' %}" class="brand-logo">Th Audio</a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
@@ -36,7 +36,7 @@
                             {% if user.is_authenticated %}
                                 <!-- Displays the link to the submissions page only to an admin -->
                                 {% if user.is_superuser %}
-                                    <li><a href="{% url 'appointments' %}">Submissions</a></li>
+                                    <li><a href="{% url 'submissions' %}">Submissions</a></li>
                                 {% endif %}
                                 <li><a href="{% url 'profile' %}">Profile</a></li>
                                 <li><a href="{% url 'logout' %}">Logout</a></li>
@@ -54,7 +54,7 @@
                     <li><a href="{% url 'submit' %}">Submit</a></li>
                     {% if user.is_authenticated %}
                         {% if user.is_superuser %}
-                            <li><a href="{% url 'appointments' %}">Submissions</a></li>
+                            <li><a href="{% url 'submissions' %}">Submissions</a></li>
                         {% endif %}
                         <li><a href="{% url 'profile' %}">Profile</a></li>
                         <li><a href="{% url 'logout' %}">Logout</a></li>
@@ -69,7 +69,7 @@
             {% block content %}
             {% endblock %}
 
-            <footer class="page-footer footer-bg-color">
+            <footer class="page-footer black-palette-color">
                 <div class="container">
                     <div class="row">
                         <div class="col l6 s12">

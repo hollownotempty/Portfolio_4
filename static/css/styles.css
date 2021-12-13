@@ -46,22 +46,31 @@ footer ul li {
     margin: 5px;
 }
 
-/* --------------------------- Colors */
+/* --------------------------- Color Palette */
 
-.nav-bg-color {
-    background-color: #212121;
+.black-palette-color {
+    background-color: #000000 !important;
 }
 
-.off-white {
-    background-color: #fafafa;
+.darkblue-palette-color {
+    background-color: #060d2f !important;
 }
 
-.footer-bg-color {
-    background-color: #000000;
+.mediumblue-palette-color {
+    background-color: #274684 !important;
 }
 
-.book-call-bg-color {
-    background-color: #212121;
+.lightblue-palette-color {
+    background-color: #709fdc !important;
+}
+
+.ultralightblue-palette-color {
+    background-color: #b9d5fd !important;
+}
+
+.gradient-palette-color {
+    background: rgb(112,159,220);
+    background: linear-gradient(45deg, rgba(112,159,220,1) 0%, rgba(185,213,253,1) 84%);
 }
 
 /* ------------------------------------------------------- HOME PAGE */
@@ -143,15 +152,15 @@ footer ul li {
 /* --------------------------- Book call section */
 
 #book-call-section {
-    color: #fafafa;
+    color: #FAFAFA;
 }
 
 .book-call-btn {
     margin: 20px 0px;
-    background-color: #fafafa;
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    border-radius: 50px;
 }
 
 .book-call-btn:hover {
@@ -202,6 +211,43 @@ footer ul li {
     height: 969px;
 }
 
+/* label color */
+.input-field label {
+    color: #000000 !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: #000000 !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000000 !important;
+    box-shadow: 0 1px 0 0 #000000 !important;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000000 !important;
+    box-shadow: 0 1px 0 0 #000000 !important;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000000 !important;
+    box-shadow: 0 1px 0 0 #000000 !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+
+.register_content form label {
+    color: black !important;
+}
+
 /* --------------------------- Appointments Page */
 
 .appointment-display{
@@ -233,6 +279,7 @@ footer ul li {
 .profile-submission-display {
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 10px;
 }
 
 /* --------------------------- Utility */
@@ -247,4 +294,8 @@ footer ul li {
 
 .links {
     text-decoration: underline;
+}
+
+.divider {
+    background-color: black;
 }

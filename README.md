@@ -37,7 +37,7 @@ User's are coming to this site to learn about the producer, hear some of their w
 
 ## Structure
 
-All pages on this site contain a nav bar and footer that contain links to the other pages on the site as well as social media links and small about section on the producer.
+All pages on this site contain a nav bar and footer that contain links to the other pages on the site as well as social media links and small about section on the producer. The site is built using a blue monochrome color palette.
 
 ### Home
 

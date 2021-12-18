@@ -2,6 +2,8 @@
 
 For the portfolio project I have created a site for clients to send their music a music producer to be mixed and mastered remotely. 
 
+![home_page](static/images/screenshots/home_page_screenshot.png)
+
 ## Contents
 
 1. [Strategy](#strategy)

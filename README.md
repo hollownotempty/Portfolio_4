@@ -107,9 +107,10 @@ The wireframes for this project can be viewed [here](static/images/wireframes)
    4. [Pexels](https://www.pexels.com/) - Stock image site used to source images
    5. [Gradient Animator](https://www.gradient-animator.com/) - Used for creation of background gradients
    6. LucidChart - Used to create the flowchart for this project. 
+   7. [Box Shadow Generator](https://getcssscan.com/css-box-shadow-examples) - Used to create css box shadows 
 
 ## Validation 
-All validations passed with no errors (except for HTML, which had none important errors thrown by the django template language that were ignored)
+All validations passed with no errors (except for HTML, which had non important errors thrown by the django template language that were ignored)
       - All Python code has been validated using the [PEP8 Online Check](http://pep8online.com/)
       - HTML has been validated using the [W3C validator](https://validator.w3.org/nu/)
       - CSS has been validated using the [Jigsaw validator](https://jigsaw.w3.org/css-validator/)

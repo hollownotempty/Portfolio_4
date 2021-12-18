@@ -2,6 +2,66 @@
 
 ## User Story Testing
 
+1. As a {USER}, I want {TO CONTACT THE PRODUCER}, so that {I CAN GET THEM TO WORK ON MY MUSIC}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+2. As a {admin}, I want {TO BE ABLE TO VIEW/MANAGE SUBMITTED INFO}, so that {I CAN KEEP CONTROL OVER THEM}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+3. As a {user and admin}, I want {TO RECEIVE AN EMAIL CONFIRMING MY SUBMISSION}, so that {I CAN BE INFORMED WHEN IT GOES THROUGH}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+4. As a {USER}, I want {TO UPLOAD A LINK TO MY FILES}, so that {THE ADMIN CAN DOWNLOAD THEM}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+5. As a {ADMIN}, I want {TO BE ABLE TO SEND THE USERS THEIR FILES}, so that {THEY CAN HAVE THE FINISHED PROJECT}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+6. As a {ADMIN}, I want {TO BE ABLE TO DOWNLOAD THE USERS STEMS}, so that {I CAN WORK ON THEIR PROJECT}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+8. As a {user}, I want {a page I can go to with all the info about my appointment}, so that {I can cancel, reschedule or remind myself about my appointment info}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+9. As a {USER}, I want {TO SEE TESTIMONIALS FROM PAST CLIENTS}, so that {I CAN SEE WHAT PEOPLE ARE SAYING BEFORE I HIRE THE PRODUCER}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+10. As a {ADMIN}, I want {THE SUBMISSIONS REVIEW PAGE TO BE PRIVATE}, so that {REGULAR USERS CANT SEE/DOWNLOAD OTHERS FILES}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
+11. As a {USER}, I want {SITE MESSAGES UPON SITE ACTIONS}, so that {I CAN GET FEEDBACK IF I HAVE CORRENTLY OR INCORRECTLY USED THE SITE}.
+    <details>
+    <summary>Achieve by...</summary>
+    <br>
+    </details>
+
 
 
 ## Bugs

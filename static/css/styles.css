@@ -53,7 +53,7 @@ footer ul li {
 }
 
 .darkblue-palette-color {
-    background-color: #060d2f !important;
+    background-color: #020512 !important;
 }
 
 .mediumblue-palette-color {
@@ -161,6 +161,8 @@ footer ul li {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white !important;
 }
 
 .book-call-btn:hover {

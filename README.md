@@ -43,6 +43,8 @@ All pages on this site contain a nav bar and footer that contain links to the ot
 
 ### Home
 
+![home_page](static/images/screenshots/full_home_page.png)
+
 The home screen is simple enough. It contains:
 
    - A hero section with a tagline
@@ -51,13 +53,20 @@ The home screen is simple enough. It contains:
 
 ### Login/Signup
 
+![login](static/images/screenshots/full_login_page.png)
+![signup](static/images/screenshots/full_signup_page.png)
+
 A simple form system for the purpose of signing in and signing up.
 
 ### Submit Page
 
+![submit_page](static/images/screenshots/full_submit_page.png)
+
 A page with one form on it that takes the users info along with their stems link. 
 
-### Admin Appointments Page
+### Admin Submissions Page
+
+![submissions_page](static/images/screenshots/full_submissions_page.png)
 
 A page for the admin that displays all the current submissions with the given details by the user.
 

@@ -19,6 +19,7 @@ will prevent them from accessing the page. -->
                     <p>Email: {{ a.user.email }}</p>
                     <a href="{{ a.file_link }}" class="links" target="_blank">Stems/Stereo File</a>
                     <p>Message: {{ a.message }}</p>
+                    <a href="{% url 'delete_submission' a.id %}" class="btn delete-submission-btn">Delete Submission</a>
             </div>
             {% endfor %}
         </div>

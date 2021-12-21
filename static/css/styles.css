@@ -258,6 +258,10 @@ footer ul li {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.appointment-display .delete-submission-btn {
+    margin-bottom: 10px;
+}
+
 /* --------------------------- About Page */
 
 .about-para {

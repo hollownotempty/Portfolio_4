@@ -95,6 +95,8 @@ The wireframes for this project can be viewed [here](static/images/wireframes)
 ### Data Models
    This project uses one main data model and that is the Appointment model. This is the model that logs all the info that the user gives in the ModelForm, including first name, last name, email, file link and the date it was booked. 
 
+   ![models](static/images/models.png)
+
 ### User Interface
    The interface for this website did not need to be too complicated, as a simple site like this does not need to reinvent the wheel. Everything was styled using MaterializeCSS to keep a cohesive look. Users are also presented with djangos built in messages upon certain actions (such as loggin in, loggin out, submitting a form etc) to keep them informed on their journey through the site.
 

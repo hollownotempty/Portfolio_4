@@ -46,6 +46,10 @@ footer ul li {
     margin: 5px;
 }
 
+#messages {
+    background-color: lightgreen;
+}
+
 /* --------------------------- Color Palette */
 
 .black-palette-color {

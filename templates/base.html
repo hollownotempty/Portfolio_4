@@ -18,8 +18,10 @@
 
             {% if messages %}
                 {% for message in messages %}
-                <div class="container messages">
-                    {{ message }}
+                <div id="messages">
+                    <div class="container">
+                        {{ message }}
+                    </div>
                 </div>
                 {% endfor %}
             {% endif %}

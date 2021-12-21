@@ -13,7 +13,7 @@
         {% for a in submissions %}
             <div class="profile-submission-display col s12 ultralightblue-palette-color">
                     <p>Submitted on: {{ a.date_booked }}</p>
-                    <p>Your submitted files can be viewed <a href="{{ a.file_link }}" class="links">here</a>.</p>
+                    <p>Your submitted files can be viewed <a href="{{ a.file_link }}" class="links" target="_blank">here</a>.</p>
                     <p>Your Message: {{ a.message }}</p>
             </div>
         {% endfor %}

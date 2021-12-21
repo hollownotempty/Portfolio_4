@@ -17,7 +17,7 @@ will prevent them from accessing the page. -->
             <div class="appointment-display col s12 ultralightblue-palette-color">
                     <p>Username: {{ a.user }}</p>
                     <p>Email: {{ a.user.email }}</p>
-                    <a href="{{ a.file_link }}" class="links">Stems/Stereo File</a>
+                    <a href="{{ a.file_link }}" class="links" target="_blank">Stems/Stereo File</a>
                     <p>Message: {{ a.message }}</p>
             </div>
             {% endfor %}

@@ -15,6 +15,7 @@
                     <p>Submitted on: {{ a.date_booked }}</p>
                     <p>Your submitted files can be viewed <a href="{{ a.file_link }}" class="links" target="_blank">here</a>.</p>
                     <p>Your Message: {{ a.message }}</p>
+                    <a href="{% url 'delete_submission' a.id %}" class="btn delete-submission-btn">Delete Submission</a>
             </div>
         {% endfor %}
     {% else %}

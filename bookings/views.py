@@ -51,6 +51,12 @@ def returnAboutPage(request):
 def return_appointments(request):
     # Allows the display of all objects in the Appointment model on the 
     # appointments page.
-    return render(request, 'appointments.html', {
+    return render(request, 'submissions.html', {
         'appointments': Appointment.objects.all(),
         })
+
+
+def delete_submission(request, submission_id):
+    submission = Appointment.objects.get(pk=submission_id)
+    submission.delete()
+    return redirect('profile')

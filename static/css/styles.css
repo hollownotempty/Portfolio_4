@@ -284,6 +284,16 @@ footer ul li {
     margin-bottom: 10px;
 }
 
+.delete-submission-btn {
+    text-decoration: underline;
+    background: red;
+}
+
+.delete-submission-btn:hover {
+    background: red;
+    opacity: 0.8;
+}
+
 /* --------------------------- Utility */
 
 .remove-bottom-margin {

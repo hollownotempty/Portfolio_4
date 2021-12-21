@@ -16,7 +16,7 @@ plaintext_message = get_template('email_template.txt')
 html_message = get_template('email_template.html')
 
 
-def returnHome(request):
+def home(request):
     return render(request, 'home.html')
 
 
@@ -44,7 +44,7 @@ def submit_page(request):
     return render(request, 'submit.html', {'form': form})
 
 
-def returnAboutPage(request):
+def about_page(request):
     return render(request, 'about.html')
 
 

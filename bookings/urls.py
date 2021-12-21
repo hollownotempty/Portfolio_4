@@ -7,4 +7,5 @@ urlpatterns = [
     path('about/', views.about_page, name='about'),
     path('submissions', views.return_appointments, name='submissions'),
     path('delete_submission/<submission_id>', views.delete_submission, name='delete_submission'),
+    path('edit_submission/<submission_id>', views.edit_submission, name='edit_submission'),
 ]

@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
-
+{% block title %} {{ user }} | Tom Holohan Audio {% endblock %}
 {% block content %}
 
 <div class="container">
     {% if user.is_authenticated %}
-        <h2>{% block title %} Profile {% endblock %}</h2>
+        <h2>Profile</h2>
         <p>Username: {{ user }}</p>
         <p>Email: {{ user.email }}</p>
         <h3>Submission History:</h3>
@@ -16,6 +16,7 @@
                     <p>Your submitted files can be viewed <a href="{{ a.file_link }}" class="links" target="_blank">here</a>.</p>
                     <p>Your Message: {{ a.message }}</p>
                     <a href="{% url 'delete_submission' a.id %}" class="btn delete-submission-btn">Delete Submission</a>
+                    <a href="{% url 'edit_submission' a.id %}" class="btn edit-submission-btn">Edit Submission</a>
             </div>
         {% endfor %}
     {% else %}

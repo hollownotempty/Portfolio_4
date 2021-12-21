@@ -56,6 +56,18 @@ def return_appointments(request):
         })
 
 
+def edit_submission(request, submission_id):
+    submission = Appointment.objects.get(pk=submission_id)
+    form = SubmitForm(request.POST or None, instance=submission)
+    if form.is_valid():
+        form.save()
+        return redirect('profile')
+    return render(request, 'edit_submission.html', {
+        'submission': submission,
+        'form': form
+    })
+
+
 def delete_submission(request, submission_id):
     submission = Appointment.objects.get(pk=submission_id)
     submission.delete()

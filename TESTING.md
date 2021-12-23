@@ -3,64 +3,133 @@
 ## User Story Testing
 
 1. As a {USER}, I want {TO CONTACT THE PRODUCER}, so that {I CAN GET THEM TO WORK ON MY MUSIC}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    1. User goes to the site 
+
+    2. User creates an account or logs in
+
+    3. User goes to the submit page
+
+    4. User fills out form and hits submit
 
 2. As a {admin}, I want {TO BE ABLE TO VIEW/MANAGE SUBMITTED INFO}, so that {I CAN KEEP CONTROL OVER THEM}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    1. Admin goes to the site
+
+    2. Admin logs into their superuser account
+
+    3. Admin navigates to 'Submissions' page
 
 3. As a {user and admin}, I want {TO RECEIVE AN EMAIL CONFIRMING MY SUBMISSION}, so that {I CAN BE INFORMED WHEN IT GOES THROUGH}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    This is acheived by this view 
+    ```
+    def submit_page(request):
+
+        if request.method == 'POST':
+            form = SubmitForm(request.POST)
+            if form.is_valid:
+                instance = form.save()
+                instance.user = request.user
+                instance.save()
+                # The following code sends an email upon form completion to the 
+                # email corresponding with the currently logged in user.
+                email = instance.user.email
+                subject, from_email, recipient_list = 'Your Submission', settings.EMAIL_HOST_USER, [email, ]
+                text_content = plaintext_message.render()
+                html_content = html_message.render()
+                msg = EmailMultiAlternatives(subject, text_content, from_email, recipient_list)
+                msg.attach_alternative(html_content, "text/html")
+                msg.send()
+                messages.success(request, 'Contact request submitted successfully.')
+                return redirect('submit')
 
 4. As a {USER}, I want {TO UPLOAD A LINK TO MY FILES}, so that {THE ADMIN CAN DOWNLOAD THEM}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    When the user fills out the form it includes a field for the user to add a link, which they can access again at a later date from their profile page. 
 
 5. As a {ADMIN}, I want {TO BE ABLE TO SEND THE USERS THEIR FILES}, so that {THEY CAN HAVE THE FINISHED PROJECT}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    1. Admin goes to submissions page
+
+    2. Admin locates the submission they want to find the user of
+
+    3. Admin reads email on the submission
+
+    4. Admin sends files to that email
 
 6. As a {ADMIN}, I want {TO BE ABLE TO DOWNLOAD THE USERS STEMS}, so that {I CAN WORK ON THEIR PROJECT}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    1. Admin goes to submissions page
 
-8. As a {user}, I want {a page I can go to with all the info about my appointment}, so that {I can cancel, reschedule or remind myself about my appointment info}.
-    <details>
-    <summary>Achieve by...</summary>
+    2. Admin locates the necessary submission
+
+    3. Admin clicks the file link
+
+    4. Admin downloads files from the given link
+
+8. As a {user}, I want {a page I can go to with all the info about my submission}, so that {I can cancel, reschedule or remind myself about my submission info}.
     <br>
-    </details>
+    1. Users navigate to their profile page
+
+    2. Under submission history they can find all their submissions
+
+    3. Here they can change their submission or delete it. 
 
 9. As a {USER}, I want {TO SEE TESTIMONIALS FROM PAST CLIENTS}, so that {I CAN SEE WHAT PEOPLE ARE SAYING BEFORE I HIRE THE PRODUCER}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    1. User navigates to home page
+    2. User scrolls down and sees testimonials at the bottom
 
 10. As a {ADMIN}, I want {THE SUBMISSIONS REVIEW PAGE TO BE PRIVATE}, so that {REGULAR USERS CANT SEE/DOWNLOAD OTHERS FILES}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+    This is achieved with the Django template language to only display the info to a super user
+    ```
+        {% if user.is_superuser %}
+            <div class="container">
+                <h3>
+                    Submissions
+                </h3>
+                <div class="row">
+                    <!-- Renders all appointment objects in individual divs -->
+                    {% for a in appointments %}
+                    <div class="appointment-display col s12 ultralightblue-palette-color">
+                            <p>Username: {{ a.user }}</p>
+                            <p>Email: {{ a.user.email }}</p>
+                            <a href="{{ a.file_link }}" class="links" target="_blank">Stems/Stereo File</a>
+                            <p>Message: {{ a.message }}</p>
+                            <a href="{% url 'delete_submission' a.id %}" class="btn delete-submission-btn">Delete Submission</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% else %}
+                <div class="container">
+                    <h1>
+                        You are not an admin!
+                    </h1>
+                    <p>
+                        You have insufficient privileges to access this page. 
+                    </p>
+                    <br>
+                    <p><a href="{% url 'home' %}">Return Home</a></p>
+                </div>
+            {% endif %}
 
 11. As a {USER}, I want {SITE MESSAGES UPON SITE ACTIONS}, so that {I CAN GET FEEDBACK IF I HAVE CORRENTLY OR INCORRECTLY USED THE SITE}.
-    <details>
-    <summary>Achieve by...</summary>
     <br>
-    </details>
+
+    This is done using Djangos built in messages. 
+    ```
+    {% if messages %}
+        {% for message in messages %}
+            <div id="messages">
+                <div class="container">
+                    {{ message }}
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
 
 
 

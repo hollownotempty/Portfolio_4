@@ -70,6 +70,10 @@ A page with one form on it that takes the users info along with their stems link
 
 A page for the admin that displays all the current submissions with the given details by the user.
 
+### Profile Page
+
+![profile_page](static/images/screenshots/full_profile_page.png)
+
 ## Flowchart
 
 ![Flowchart](static/images/flowchart/booking_flowchart.pdf)

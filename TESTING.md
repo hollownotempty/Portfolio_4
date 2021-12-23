@@ -1,5 +1,21 @@
 # Testing
 
+## Manual Testing
+
+Testing the app was done manually by creating many users to create dummy data and submissions to make sure the app ran perfectly. This was done by creating profiles using different emails, logging in, making a submission and checking if the confirmation email was received on that account, the submission was visible in the submissions page on the admin account and that the user was able to go to their profile page to view, edit and delete their submission if they required. Here is a list of the tests ran during the development of this project. 
+
+1. Creating new accounts to make sure the signup form worked properly. 
+2. Logging in using the correct information to see if logging in worked. 
+3. Using incorrect login information to make sure it didn't allow an unregistered user in. 
+4. Making submissions under different accounts to make sure the submissions were attributed to their usernames on the backend (this was checked in the django admin panel)
+5. Making submissions to see if the email capabilities worked properly and that an automatic email was sent to the user. 
+6. Logging in and out to make sure the views worked and that the logged in state was presented differently to the logged out. 
+7. Searching the urls to admin-only pages to make sure that if a user who wasn't an admin managed to find those urls that they would not be able to access the page. 
+8. Editing submissions repeatedly on a user profile page to make sure that edits took effect and were presented in their new state to the user.
+9. Creating and then deleting submissions from the front-end to make sure that they were removed properly from the database. 
+10. Javascript carousel was tested on different devices to make sure it could be swiped with a finger or clicked
+11. Javascript Sidenav had to be tested on a few different mobile devices to make sure it implemented properly (these included an iphone, samsung galaxy, ipad, ipod touch and ipad mini)
+
 ## User Story Testing
 
 1. As a {USER}, I want {TO CONTACT THE PRODUCER}, so that {I CAN GET THEM TO WORK ON MY MUSIC}.
